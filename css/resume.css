@@ -1,0 +1,124 @@
+/* Reset default browser styles for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base styles for body */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.2em;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #2c3e50;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 5px;
+  margin: 30px 0 15px;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #34495e;
+  margin: 15px 0 5px;
+}
+
+/* Paragraphs and text */
+p {
+  margin-bottom: 10px;
+}
+
+/* Lists (e.g., for skills, contact, experience details) */
+ul {
+  list-style-type: disc;
+  margin: 10px 0 20px 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+/* Emphasis (used for dates, roles, etc.) */
+em {
+  font-style: italic;
+  color: #555;
+}
+
+/* Links (e.g., for contact info like LinkedIn, GitHub) */
+a {
+  color: #2980b9;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #3498db;
+  text-decoration: underline;
+}
+
+/* Section spacing */
+section {
+  margin-bottom: 30px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  h3 {
+    font-size: 1.1em;
+  }
+}
+
+/* Print-friendly styles */
+@media print {
+  body {
+    margin: 0;
+    padding: 10px;
+    font-size: 12pt;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  h2 {
+    border-bottom: 1px solid #000;
+  }
+
+  /* Avoid page breaks inside sections */
+  section {
+    page-break-inside: avoid;
+  }
+}
